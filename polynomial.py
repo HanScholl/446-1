@@ -31,7 +31,7 @@ class Polynomial:
 
         # Check if the other object is an instance of Polynomial
         if isinstance(other, Polynomial):
-            return np.array_equal(self.coefficients, other.coefficients)
+            return np.all(np.array_equal(self.coefficients, other.coefficients))
 
   def __ne__(self, other):
     return not self.__eq__(other)
