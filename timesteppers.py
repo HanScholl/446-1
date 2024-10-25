@@ -8,6 +8,7 @@ Original file is located at
 """
 from scipy import sparse
 import numpy as np
+from math import factorial
 
 class BackwardDifferentiationFormula:
 
